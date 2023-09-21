@@ -1,0 +1,12 @@
+body .wrapper {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

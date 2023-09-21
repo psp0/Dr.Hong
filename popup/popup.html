@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="status">
+        <button class="prev_btn"><</button>
+        <div><span id="period"></span>교시<span id="default_period">(다음교시)</span>의 공강의실 현황</div>
+        <button class="next_btn">></button>
+      </div>
+
+      <table class="main_table">
+        <tr>
+          <th>위치</th>
+          <th>강의실</th>
+        </tr>
+        <tr>
+          <td id="A_Building">A동</td>
+          <td id="A_Building_room"></td>
+        </tr>
+        <tr>
+          <td id="B_Building">B동</td>
+          <td id="B_Building_room"></td>
+        </tr>
+        <tr>
+          <td id="C_Building">C동</td>
+          <td id="C_Building_room"></td>
+        </tr>
+        <tr>
+          <td id="D_Building">D동</td>
+          <td id="D_Building_room"></td>
+        </tr>
+        <tr>
+          <td id="E_Building">E동</td>
+          <td id="E_Building_room"></td>
+        </tr>
+        <tr>
+          <td id="G_Building">G동</td>
+          <td id="G_Building_room"></td>
+        </tr>
+        <tr>
+          <td id="H_Building">H동</td>
+          <td id="H_Building_room"></td>
+        </tr>
+        <tr>
+          <td id="M_Building">M동</td>
+          <td id="M_Building_room"></td>
+        </tr>
+        <tr>
+          <td id="FIKL_Building">FIKL동</td>
+          <td id="FIKL_Building_room"></td>
+        </tr>
+        <tr>
+          <td id="RTU_Building">RTU동</td>
+          <td id="RTU_Building_room"></td>
+        </tr>
+      </table>
+      기본적으로 다음 교시의 공강의실이 표시됩니다.
+    </div>
+  </body>
+  <script type="module" src="popup.js"></script>
+</html>
