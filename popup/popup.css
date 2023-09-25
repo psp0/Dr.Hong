@@ -10,3 +10,26 @@ body .wrapper {
   justify-content: space-around;
   align-items: center;
 }
+.main_table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.main_table tr {
+  border-bottom: 1px solid #444444;
+}
+.main_table td {
+  word-wrap: break-word;
+}
+.main_table th:first-child {
+  width: 20%;
+}
+.main_table th:last-child {
+  width: 80%;
+}
+
+.main_table tr td:last-child {
+  width: 100%;
+  height: auto;
+}
