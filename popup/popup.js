@@ -11,7 +11,7 @@ import data20232 from "../data/20232data.js";
 const rearrange = (period, dataMap) => {
   let room = [];
   dataMap.forEach((value, key) => {
-    if (value.includes(`${nowDaysOfWeek}${period}`)) {
+    if (!value.includes(`${nowDaysOfWeek}${period}`)) {
       room.push(key);
     }
   });
