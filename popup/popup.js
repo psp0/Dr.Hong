@@ -109,7 +109,15 @@ const nowPeriod = now.getHours() - 8;
 const nowDaysOfWeek = daynumToKor(now.getDay());
 const defaultPeriod = nowPeriod + 1;
 document.querySelectorAll("#period")[0].textContent = defaultPeriod;
-rearrange(defaultPeriod, dataMap);
+if (nowDaysOfWeek === "토" || nowDaysOfWeek === "일") {
+  document.querySelectorAll(".explain_period")[0].textContent = "주말은 공강입니다.";
+}
+if (nowPeriod > 0 && nowPeriod < 10) {
+  rearrange(defaultPeriod, dataMap);
+} else {
+  //0교시나 10교시 이후는 표시하지 않음
+  document.querySelectorAll(".explain_period")[0].textContent = "현재는 공강입니다.";
+}
 
 //이벤트 리스너들--------------------
 const prevButton = document.querySelectorAll(".prev_btn")[0];
