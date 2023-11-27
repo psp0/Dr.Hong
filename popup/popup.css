@@ -31,6 +31,13 @@ body .wrapper {
   background-color: #2a82a0;
 }
 
+.select-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
 .status {
   display: flex;
   flex-direction: row;
